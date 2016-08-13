@@ -23,6 +23,18 @@ class SublimeArtisanMigrateCommand(sublime_plugin.TextCommand):
 			"shell" : False,
 			"working_dir" : folder})
 
+class SublimeArtisanServeCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["php", "artisan", "serve"],
+			"shell" : False,
+			"working_dir" : folder})
+
+
 
 class SublimeArtisanMigrateRollbackCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
