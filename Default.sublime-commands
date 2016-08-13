@@ -3,6 +3,10 @@
 	"caption" : "Sublime Artisan Migrate",
 	"command" : "sublime_artisan_migrate"
 },{
+	"id" : "sublimeartisanserve",
+	"caption" : "Sublime Artisan Serve",
+	"command" : "sublime_artisan_serve"
+},{
 	"id" : "sublimeartisanmigraterollback",
 	"caption" : "Sublime Artisan Migrate:Rollback",
 	"command" : "sublime_artisan_migrate_rollback"
