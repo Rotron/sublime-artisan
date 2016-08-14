@@ -1,13 +1,13 @@
-sublime-artisan
-===============
+Sublime-artisan cmd 
+================================
 
-Sublime Text plugin for Laravel Artisan commands
-
->This project is no longer maintained.
+Sublime Text plugin for Laravel Artisan commands 5.x
 
 This plugin allows you the run the normal Artisan CLI using the Sublime Text interface, without having to open and use the command line.
 
 Options Available:
+- Serve (Serve the application on the PHP development server.)
+- STOP Serve (Stop the application on the PHP development server.)
 - Help (php artisan help:commands)
 - Generate an application key (php artisan key:generate)
 - Create a session table (php artisan session:table)
