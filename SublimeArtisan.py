@@ -17,6 +17,7 @@ class SublimeArtisanMigrateCommand(sublime_plugin.TextCommand):
 
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)
+		
 
 		self.view.window().run_command("exec", {
 			"cmd" : ["php", "artisan", "migrate"],
@@ -29,9 +30,22 @@ class SublimeArtisanServeCommand(sublime_plugin.TextCommand):
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)
 
+
 		self.view.window().run_command("exec", {
-			"cmd" : ["php", "artisan", "serve"],
-			"shell" : False,
+			"cmd" : ["php artisan serve"],
+			"shell" : True,
+			"working_dir" : folder})
+
+class SublimeArtisanServestopCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["pkill -9 php"],
+			"shell" : True,
 			"working_dir" : folder})
 
 
