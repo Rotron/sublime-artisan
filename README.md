@@ -1,4 +1,4 @@
-Sublime-artisan cmd 
+Sublime-artisan cmd Laravel 5.2
 ================================
 
 Sublime Text plugin for Laravel Artisan commands 5.x
